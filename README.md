@@ -43,8 +43,90 @@ The ESP8266 NodeMCU reads data from the DHT11 and soil moisture sensors. It then
 ### Google Sheet Log
 ![alt text](image.png)
 
-### Circuit Diagram
-![Circuit Diagram](images/circuit_diagram.png)
+### Circuit Diagram Description
+
+#### Components:
+
+1. **ESP8266 NodeMCU**
+2. **DHT11 Temperature and Humidity Sensor**
+3. **Soil Moisture Sensor (Analog and Digital)**
+4. **Breadboard**
+5. **Jumper Wires**
+
+#### Connections:
+
+1. **DHT11 Sensor:**
+   - **VCC** (Pin 1) to **3.3V** on the NodeMCU.
+   - **GND** (Pin 4) to **GND** on the NodeMCU.
+   - **DATA** (Pin 2) to **D4** (GPIO2) on the NodeMCU.
+
+2. **Soil Moisture Sensor (Analog):**
+   - **VCC** to **3.3V** on the NodeMCU.
+   - **GND** to **GND** on the NodeMCU.
+   - **ANALOG OUT** to **A0** on the NodeMCU.
+
+3. **Soil Moisture Sensor (Digital):**
+   - **VCC** to **3.3V** on the NodeMCU.
+   - **GND** to **GND** on the NodeMCU.
+   - **DIGITAL OUT** to **D2** (GPIO4) on the NodeMCU.
+
+#### Additional Notes:
+
+- **Breadboard**: Use a breadboard to connect components and make the wiring easier. Place the sensors and NodeMCU on the breadboard, and use jumper wires to make the connections.
+- **Power Supply**: Ensure that the NodeMCU is powered via its USB connection or an appropriate power source.
+
+### Example Diagram Creation Steps
+
+1. **Start a New Project**:
+   - Open Fritzing or any other circuit design tool and create a new project.
+
+2. **Place Components**:
+   - Search for and place the ESP8266 NodeMCU, DHT11 sensor, and soil moisture sensors onto the workspace.
+
+3. **Make Connections**:
+   - Use wire tools to connect the components according to the connections described above.
+
+4. **Label Connections**:
+   - Label each connection and component to make the diagram clear and understandable.
+
+5. **Export Diagram**:
+   - Once the diagram is complete, export it as an image file (PNG, JPG) or PDF.
+
+### Sample Diagram (For Reference)
+
+Here is a simple textual representation of what your connections might look like:
+
+```
+          +-----------------+
+          |  NodeMCU        |
+          |                 |
+  +-------+--------+--------+--+
+  | 3.3V     |    |        |   |
+  | GND      |    |        |   |
+  | D4       |    |        |   |
+  | A0       |    |        |   |
+  | D2       |    |        |   |
+  +----------+----+--------+---+
+           |     |        |
+           |     |        |
+           |     |        |
+       +---+--+  |        |
+       | DHT11 |  |        |
+       +---+--+  |        |
+           |     |        |
+           |     |        |
+           +-----+        |
+                         |
+           +-------------+----+
+           | Soil Moisture    |
+           | Sensor (Analog)  |
+           +-------------+----+
+                         |
+           +-------------+----+
+           | Soil Moisture    |
+           | Sensor (Digital) |
+           +------------------+
+```
 
 ## Troubleshooting
 
