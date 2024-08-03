@@ -41,7 +41,7 @@ The ESP8266 NodeMCU reads data from the DHT11 and soil moisture sensors. It then
 ## Project Images
 
 ### Google Sheet Log
-![Google Sheet Log](images/google_sheet_log.png)
+![alt text](image.png)
 
 ### Circuit Diagram
 ![Circuit Diagram](images/circuit_diagram.png)
